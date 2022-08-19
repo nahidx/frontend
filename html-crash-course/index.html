@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>HTML Crash Course</title>
+        <!-- Block Element: div, h1, p, form -->
+        <!-- Inline Element: span, img, a -->
+        <!-- Tags(typically key="value" pair) can have attributes that provides information about the element -->
+    </head>
+
+    <body>
+        <!-- Heading -->
+        <h1>Heading One</h1>
+        <h2>Heading Two</h2>
+        <h3>Heading Three</h3>
+        <h4>Heading Four</h4>
+        <h5>Heading Five</h5>
+        <h6>Heading Six</h6>
+
+        <br>
+        <hr><br>
+
+        <!-- Paragraph -->
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illo aspernatur suscipit laborum
+            <strong>assumenda</strong> ea nobis ex hic officia, quasi quas nostrum magnam cum, labore <em>beatae</em>
+            voluptatum blanditiis magni quaerat.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, perspiciatis minima! <a
+                href="https://google.com/" target="_blank">vitae ex harum illo</a>, eos enim dicta quam adipisci neque
+            consequatur asperiores nihil eius modi eveniet illum reprehenderit quis maiores, voluptas nisi! Hic rerum harum
+            vitae eos, numquam minus in, ad, veritatis voluptates excepturi cum fugiat ab repellendus. Facere magni eveniet
+            nemo natus ipsum, eligendi laboriosam doloremque dolor?
+        </p>
+
+        <br>
+        <hr><br>
+
+        <p>Favourite fruits:</p>
+
+        <!-- Ordered List -->
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Pear</li>
+        </ul>
+
+        <!-- Unordered List -->
+        <ol>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Pear</li>
+        </ol>
+
+        <br>
+        <hr><br>
+
+        <!-- Table: table, thead, tbody, tr, th, td -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Profession</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kacey</td>
+                    <td>rice@kacey.com</td>
+                    <td>Dancer</td>
+                </tr>
+                <tr>
+                    <td>Stacy</td>
+                    <td>stacy@hub.com</td>
+                    <td>P*</td>
+                </tr>
+                <tr>
+                    <td>Brad</td>
+                    <td>brad@hollywood.com</td>
+                    <td>Actor</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <hr><br>
+
+        <!-- Forms -->
+        <form action="/submit" method="POST">
+            <div>
+                <label for="first-name">First Name</label>
+                <input type="text" id="fname" name="first-name" placeholder="John">
+            </div>
+            <br>
+            <div>
+                <label for="last-name">Last Name</label>
+                <input type="text" id="lname" name="last-name" placeholder="Doe">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="name@mail.com">
+            </div>
+            <br>
+            <div>
+                <label for="message">Message</label>
+                <textarea name="message" id="msg" cols="30" rows="10" placeholder="Enter your message here."></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option selected value="penguine">Penguine</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" placeholder="25">
+            </div>
+            <br>
+            <div>
+                <label for="birth">Birthday</label>
+                <input type="date" id="birth" name="birth">
+            </div>
+
+            <br>
+
+            <input type="submit" name="submit" value="Send Your Message">
+
+        </form>
+
+        <br>
+        <hr><br>
+
+        <!-- Button -->
+        <button>Click Me!</button><br>
+
+        <br>
+        <hr><br>
+
+        <!-- Image -->
+        <img src="https://unsplash.com/photos/OqtafYT5kTw/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjYwOTAzMTA4&force=true&w=1920"
+            alt="Coding is fun" width="400">
+
+        <br><br>
+        <hr><br>
+
+        <!-- Quotations -->
+        <blockquote cite="https://sci-hub.se/">
+            This is a blockquote. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores quibusdam totam rerum,
+            illum nemo aut. Repellendus expedita numquam sequi porro.
+        </blockquote>
+
+        <p><abbr title="Search Enging Optimization">SEO</abbr> is crucial for the information economy.</p>
+
+        <p><cite>Doing content right</cite> by Steph Smith</p>
+    </body>
+    <!-- Better view -->
+    <div style="margin-top:200px"></div>
+
+</html>
+
+<!-- cite: https://www.youtube.com/watch?v=UB1O30fR-EE -->
