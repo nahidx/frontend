@@ -1,0 +1,146 @@
+/* this is called reset */
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+    background-color: #f4f4f4;
+    color: #555555;
+    color: black;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    /* equivalent to the three lines above combined */
+    /* font: bold 18px Arial, Helvetica, sans-serif; */
+
+    margin: 0;
+    line-height: 1.6em;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+a:active {
+    color: #008000;
+}
+
+a:visited {
+    color: #000000;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+}
+
+.button:hover {
+    background: #f00;
+    color: #fff;
+}
+
+.box-1 {
+    background-color: #333;
+    color: #fff;
+
+    border-top: 5px red solid;
+    border-right: 5px red solid;
+    border-bottom: 5px red solid;
+    border-left: 5px yellow solid;
+    /* bottom takes most priority if same style type applied twice */
+    border-width: 2px;
+    border-bottom-width: 10px;
+    border-top-style: dotted;
+    /* bottom takes most priority */
+    border: 5px green solid;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    /* equivalent to the 4 lines above */
+    padding: 20px;
+
+    margin-top: 20px;
+    margin: 20px 0;
+}
+
+.box-1 h1 {
+    font-family: Georgia;
+    font-weight: 800;
+    font-style: italic;
+    
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    word-spacing: 1em;
+}
+
+.box-2 {
+    border: 3px dotted #ccc;
+    padding: 10px;
+    /* margin is max mutual between two elements */
+    margin: 20px 0;
+}
+
+.categories {
+    border: 1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.categories h1 {
+    text-align: center;
+}
+
+.categories ul {
+    padding: 0;
+    list-style: square;
+    list-style: none;
+    padding-left: 40px;
+}
+
+.categories li {
+    padding-bottom: 6px;
+    border-bottom: dotted 1px #333;
+    list-style-image: url('../images/ubuntu.png');
+    background-size: 10px;
+}
+
+.my-form {
+    padding: 20px;
+}
+
+.my-form .form-group {
+    padding-bottom: 15px;
+}
+
+.my-form label {
+    display: block;
+}
+
+.my-form input[type='text'], .my-form textarea {
+    padding: 8px;
+    width: 100%;
+}
+
+/* .my-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+} */
