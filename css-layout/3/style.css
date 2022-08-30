@@ -1,0 +1,38 @@
+/* Default Starter Code */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    /* reset default style */
+    margin: 0;
+    box-sizing: border-box;
+    /* all element border-box */
+}
+
+.container {
+    border: 4px solid lightgray;
+    padding: 24px 24px 0 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    border: 4px solid lightgray;
+    margin-bottom: 24px;
+}
+
+.box-small {
+    height: 100px;
+}
+
+.box-large {
+    width: 45%;
+}
+
+.wrapper {
+    width: 45%;
+    /* optional */
+    /* display: flex;
+    flex-direction: column; */
+}
