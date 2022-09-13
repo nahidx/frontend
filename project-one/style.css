@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box!important;
+}
+
+nav {
+    background-color: aquamarine;
+}
+
+nav > .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    height: 85px;
+}
+
+.logo {
+    margin: -16px 0;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    padding-left: 16px;
+    font-size: 20px;
+    font-weight: 700;
+} 
+
+a {
+    /* text-decoration: none; */
+    color: #212121;
+}
+
+header > .container {
+    display: flex;
+    height: calc(100vh - 125px);
+    justify-content: center;
+    align-items: center;
+    /* width: 90%; */
+}
+
+.container {
+        padding: 16px;
+        max-width: 900px;
+        margin: 0 auto;
+}
+
+/*
+
+Fixing the hero image size
+
+*/
+.hero-image {
+    width: 100%; /* This one seems like magic! */
+}
+
+figure {
+    width: 50%;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+/*
+
+Fixed the hero image size
+
+*/
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.5em;
+    padding: 16px 0;
+}
+
+button {
+    padding: 16px 32px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    background-color: #00ffff;
+    color: #212121;
+    cursor: pointer;
+}
+
+/* 
+
+About Us
+
+*/
+
+#about {
+    background-color: antiquewhite;
+    padding-bottom: 16px;
+}
+
+h2 {
+    font-size: 32px;
+    text-align: center;
+    padding: 32px 0px;
+}
+
+.about__content-wrapper {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: row-reverse; */
+    align-items: center;
+}
+
+.about-image {
+    width: 50%;
+}
+
+/*  
+
+Review Section
+
+*/
+
+#reviews {
+    padding-bottom: 16px;
+}
+
+.reviews__wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.upwork {
+    width: 20px;
+}
+
+.review {
+    padding: 0 16px;
+    width: 30%;
+}
+
+/*  
+
+Form
+
+*/
+
+#contact {
+    background-color: antiquewhite;
+    padding-bottom: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+input, textarea, .button-form {
+    margin-bottom: 16px;
+    font-size: 17px;
+    border: none;
+}
+
+input {
+    height: 36px;
+}
+
+label {
+    margin-bottom: 4px;
+}
+
+
+/*  
+
+Footer
+
+*/
+
+.footer-logo {
+    max-width: 200px;
+    margin-bottom: 16px;
+}
+
+footer > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
