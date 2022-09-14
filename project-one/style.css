@@ -4,22 +4,18 @@
     font-family: 'Inter', sans-serif;
     padding: 0;
     margin: 0;
-    box-sizing: border-box!important;
+    box-sizing: border-box;
 }
 
 nav {
     background-color: aquamarine;
 }
 
-nav > .container {
+nav > .row {
     display: flex;
     justify-content: space-between;
-    padding: 16px;
+    padding: 8px 16px;
     height: 85px;
-}
-
-.logo {
-    margin: -16px 0;
 }
 
 ul {
@@ -36,22 +32,19 @@ li {
 } 
 
 a {
-    /* text-decoration: none; */
     color: #212121;
 }
 
-header > .container {
+header > .row {
     display: flex;
     height: calc(100vh - 125px);
-    justify-content: center;
-    align-items: center;
-    /* width: 90%; */
 }
 
-.container {
-        padding: 16px;
-        max-width: 900px;
-        margin: 0 auto;
+.row {
+    padding: 24px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 /*
@@ -61,6 +54,8 @@ Fixing the hero image size
 */
 .hero-image {
     width: 100%; /* This one seems like magic! */
+    /* max-width: calc(100vh - 125px); */
+    
 }
 
 figure {
@@ -81,15 +76,21 @@ h1 {
     font-size: 40px;
 }
 
+.hero-text > p {
+    font-size: 20px;
+    line-height: 1.2em;
+    margin: 16px 0 24px 0;
+}
+
 p {
     font-size: 17px;
     line-height: 1.5em;
-    padding: 16px 0;
+    margin: 0 0 16px 0;
 }
 
 button {
     padding: 16px 32px;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: bold;
     border: none;
     background-color: #00ffff;
@@ -137,8 +138,7 @@ Review Section
 
 .reviews__wrapper {
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between; 
 }
 
 .upwork {
@@ -197,8 +197,72 @@ Footer
     margin-bottom: 16px;
 }
 
-footer > .container {
+footer > .row {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* 728px: Smart Phones, Tablets */
+@media (max-width:728px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    header > .row {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .hero-image {
+        width: 100%;
+        /* This one seems like magic! */
+    }
+
+    figure {
+        width: auto;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .about__content-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about-image {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .reviews__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .review {
+        padding: 0 0 24px 0;
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    li {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .row > p {
+        margin-top: 24px;
+        font-size: 12px;
+    }
 }
